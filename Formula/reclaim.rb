@@ -5,13 +5,13 @@
 class Reclaim < Formula
   desc "A deliberately boring macOS disk cleaner, app uninstaller, and app updater."
   homepage "https://github.com/ihdev524/reclaim"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/ihdev524/reclaim/releases/download/v1.0.0/reclaim_1.0.0_darwin_amd64.tar.gz"
-    sha256 "a1be699b4de5ec37c2d8782f9eea6f99452d92f9bdf0556dec71abb4a3c557eb"
+    url "https://github.com/ihdev524/reclaim/releases/download/v1.0.1/reclaim_1.0.1_darwin_amd64.tar.gz"
+    sha256 "f7a39cf6c490dd23cab00fde0b356e2cd16fff37007d63d7823e3623907319a6"
 
     define_method(:install) do
       bin.install "reclaim"
@@ -20,8 +20,8 @@ class Reclaim < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/ihdev524/reclaim/releases/download/v1.0.0/reclaim_1.0.0_darwin_arm64.tar.gz"
-    sha256 "e6981169f5f2efe2bcfa95c489c4a37edf9fabfcb606e293b3b3af138394f42a"
+    url "https://github.com/ihdev524/reclaim/releases/download/v1.0.1/reclaim_1.0.1_darwin_arm64.tar.gz"
+    sha256 "4b261505f93ad79602331f72686f75206d8aa941f6e93ea5fcf23b4e79d1766b"
 
     define_method(:install) do
       bin.install "reclaim"
